@@ -1,9 +1,252 @@
-<html>
- 
-<body>
-  <h1>ILCA ZWEEN</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ilse's Cheat Sheet</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+
+<!-- Nav bar -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="#basics">HTML Basics</a></li>
+                    <li><a href="#tables">HTML Tables</a></li>
+                    <li><a href="#selectors">CSS Selectors & Specificity</a></li>
+                    <li><a href="#properties">CSS Properties</a></li>
+                </ul>
+            </nav>
+
+<!-- Title -->
+            <h1>Ilse's Cheat Sheet</h1>
+        </header>
+
+<!-- Basics section -->
+
+        <div id="basics">
+            <h2>HTML Basics</h2>
+            <table>
+                <thead>
+                    <th class="coltag">Tag/Attribute</th>
+                    <th class="colname">Name</th>
+                    <th class="coldescription">Description</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tag">&lt;div&gt;</td>
+                        <td>Division</td>
+                        <td>Defines a division, used as a container for elements. Good for class or id attribute.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;h1&gt;</td>
+                        <td>Heading</td>
+                        <td>Used for the largest headings. Followed by h2 to h6.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;br&gt;</td>
+                        <td>Line break</td>
+                        <td>Produces line break in text (return).</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;hr&gt;</td>
+                        <td>Horizontal rule</td>
+                        <td>Produces a horizontal line between elements.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;ul&gt;</td>
+                        <td>Unordered list</td>
+                        <td>Creates a list using bullet points. Used together  with &lt;li&gt;.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;ol&gt;</td>
+                        <td>Ordered list</td>
+                        <td>Creates a numbered list. Used together with &lt;li&gt;.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;img&gt;</td>
+                        <td>Image</td>
+                        <td>Embeds an image into the HTML document. Needs to have src="" defined. Self-closing.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;a&gt;</td>
+                        <td>Anchor</td>
+                        <td>Embeds a hyperlink into the HTML document. Needs to have href="" defined.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+<!-- Tables section -->
+        <div id="tables">
+            <h2>HTML Tables</a></h2>
+            <table>
+                <thead>
+                    <th class="coltag">Tag/Attribute</th>
+                    <th class="colname">Name</th>
+                    <th class="coldescription">Description</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tag">&lt;table&gt;</td>
+                        <td>Table</td>
+                        <td>The wrapper element for all HTML tables.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;thead&gt;</td>
+                        <td>Table Head</td>
+                        <td>The set of rows defining the column headers in a table.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;tbody&gt;</td>
+                        <td>Table Body</td>
+                        <td>The set of rows containing actual table data.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;tr&gt;</td>
+                        <td>Table Row</td>
+                        <td>The table row container.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;td&gt;</td>
+                        <td>Table  Data</td>
+                        <td>The data inside the table row container.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">&lt;tfoot&gt;</td>
+                        <td>Table Foot</td>
+                        <td>The set of rows defining the footer in a table.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">colspan</td>
+                        <td>Column Span</td>
+                        <td>Defines how many columns a td element should span.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">rowspan</td>
+                        <td>Row Span</td>
+                        <td>Defines how many rows a td element should span.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+<!-- Selectors section -->
+        <div id="selectors">
+            <h2>CSS Selectors & Specificity</a></h2>
+            <table>
+                <thead>
+                    <th class="coltag">Selector</th>
+                    <th class="colname">Example</th>
+                    <th class="coldescription">Description</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="tag">.class</td>
+                        <td>.intro</td>
+                        <td>TSelects all elements with class="intro"</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">class1.class2</td>
+                        <td>.name1.name2</td>
+                        <td>Selects all elements with both name1 and name2 set within its class atribute. Also known as chaining.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">.class1 p</td>
+                        <td>.name1 p</td>
+                        <td>Selects all &lt;p&gt; elements that are descendants of an element with class="name1".</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">#id</td>
+                        <td>#title</td>
+                        <td>Selects the element with id="title".</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">element</td>
+                        <td>p</td>
+                        <td>Selects all &lt;p&gt; elements.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">element.class</td>
+                        <td>p.intro</td>
+                        <td>Selects all &lt;p&gt; elements with class="intro".</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">element, element</td>
+                        <td>div, p</td>
+                        <td>Selects all &lt;div&gt; and &lt;p&gt; elements.</td>
+                    </tr>
+                    <tr>
+                        <td class="tag">element element</td>
+                        <td>div p</td>
+                        <td>Selects all &lt;p&gt; elements inside &lt;div&gt; elements.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Class overrides tag & id overrides class. &lt;!important overrides all other selectors.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+<!-- Properties section -->
+<div id="properties">
+    <h2>CSS Properties</a></h2>
+    <table>
+        <thead>
+            <th class="coltag">Tag/Attribute</th>
+            <th class="colname">Name</th>
+            <th class="coldescription">Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tag">&lt;table&gt;</td>
+                <td>Table</td>
+                <td>The wrapper element for all HTML tables.</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;thead&gt;</td>
+                <td>Table  Head</td>
+                <td>The set of rows defining the column headers in a table.</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;tbody&gt;</td>
+                <td>Table Body</td>
+                <td>The set of rows containing actual table data.</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;tr&gt;</td>
+                <td>Table Row</td>
+                <td>The table row container.</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;td&gt;</td>
+                <td>Table  Data</td>
+                <td>The data inside the table row container.</td>
+            </tr>
+            <tr>
+                <td class="tag">&lt;tfoot&gt;</td>
+                <td>Table Foot</td>
+                <td>The set of rows defining the footer in a table.</td>
+            </tr>
+            <tr>
+                <td class="tag">colspan</td>
+                <td>Column Span</td>
+                <td>Defines how many columns a td element should span.</td>
+            </tr>
+            <tr>
+                <td class="tag">rowspan</td>
+                <td>Row Span</td>
+                <td>Defines how many rows a td element should span.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+        
+    </body>
+
 </html>
