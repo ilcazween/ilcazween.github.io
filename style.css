@@ -67,14 +67,17 @@ tbody td {
 }
 
 .coltag {
-    width: 10%;
+    width: 50px%;
 }
 
 .colname {
-    width: 40%;
+    width: 150px;
 }
 
 .coldescription {
-    width: 50%;
+    width: 650px;
 }
 
+.colproperty {
+    column-span: 2;
+}
